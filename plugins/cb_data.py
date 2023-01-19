@@ -16,15 +16,15 @@ from helper.progress import humanbytes
 from helper.set import escape_invalid_curly_brackets
 import os
 
-log_channel = int(os.environ.get("LOG_CHANNEL", ""))
+log_channel = int(os.environ.get("LOG_CHANNEL", "-1001878141773"))
 
-API_ID = int(os.environ.get("API_ID", ""))
+API_ID = int(os.environ.get("API_ID", "16533237"))
 
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "384ffd14566ba610992d5561e0c553e6")
 
-STRING = os.environ.get("STRING", "")
+STRING = os.environ.get("STRING", "BQFcl6gAYxKbku5ndjPjd6ajLigSnpLQdgR3OXyhytgaZa7UxYkfZG9Sy8XBAmXiPuojx_YnpcSiBsWpvFKD28DyM3dcsDCAsv8Y71Vr8PKa38-GGsiBZHt_tCnAKLdUGUUTqWFAEZhgtTCnrtEqRaE6yuvYY0PycoAcIFRMMNvBr4arfx3rruZuOn9fb6crAkJkeXP303cQNklDheitAKj-7FDU8xa9tj07r5X6RfA_vc72i6XfVJFgmX5xui6SylvF696MRJbSEzGW2sOVBPxL5dNdfTUz-nN2qrRPSP703UFmE1s8la2XSgcsdr5tZw6V0em-uh5kzcYW8cP9bSwToNaPiwAAAAFkK0eEAA")
 
-ADMIN = os.environ.get("ADMIN", "")
+ADMIN = os.environ.get("ADMIN", "945284066")
 
 app = Client("test", api_id=API_ID, api_hash=API_HASH, session_string=STRING)
 
@@ -91,7 +91,8 @@ async def doc(bot, update):
         caption = new_tex.format(
             filename=new_filename, filesize=humanbytes(file.file_size))
     else:
-        caption = f"**{new_filename}**"
+        caption = f"**{new_filename}\n\n <a href="https://t.me/movie_time_botonly">ʀᴇɴᴀᴍᴇᴅ ʙʏ ᴛʀᴜᴍʙᴏᴛs 🏆</a>**"
+
     if thumb:
         ph_path = await bot.download_media(thumb)
         Image.open(ph_path).convert("RGB").save(ph_path)
@@ -188,7 +189,8 @@ async def vid(bot, update):
         caption = new_tex.format(filename=new_filename, filesize=humanbytes(
             file.file_size), duration=timedelta(seconds=duration))
     else:
-        caption = f"**{new_filename}**"
+        caption = f"**{new_filename}\n\n <a href="https://t.me/movie_time_botonly">ʀᴇɴᴀᴍᴇᴅ ʙʏ ᴛʀᴜᴍʙᴏᴛs 🏆</a>**"
+
     if thumb:
         ph_path = await bot.download_media(thumb)
         Image.open(ph_path).convert("RGB").save(ph_path)
@@ -283,7 +285,7 @@ async def aud(bot, update):
         caption = new_tex.format(filename=new_filename, filesize=humanbytes(
             file.file_size), duration=timedelta(seconds=duration))
     else:
-        caption = f"**{new_filename}**"
+        caption = f"**{new_filename}\n\n <a href="https://t.me/movie_time_botonly">ʀᴇɴᴀᴍᴇᴅ ʙʏ ᴛʀᴜᴍʙᴏᴛs 🏆</a>**"
 
     if thumb:
         ph_path = await bot.download_media(thumb)

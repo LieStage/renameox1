@@ -12,7 +12,7 @@ API_HASH = os.environ.get("API_HASH", "384ffd14566ba610992d5561e0c553e6")
 
 STRING = os.environ.get("STRING", "BQFcl6gAYxKbku5ndjPjd6ajLigSnpLQdgR3OXyhytgaZa7UxYkfZG9Sy8XBAmXiPuojx_YnpcSiBsWpvFKD28DyM3dcsDCAsv8Y71Vr8PKa38-GGsiBZHt_tCnAKLdUGUUTqWFAEZhgtTCnrtEqRaE6yuvYY0PycoAcIFRMMNvBr4arfx3rruZuOn9fb6crAkJkeXP303cQNklDheitAKj-7FDU8xa9tj07r5X6RfA_vc72i6XfVJFgmX5xui6SylvF696MRJbSEzGW2sOVBPxL5dNdfTUz-nN2qrRPSP703UFmE1s8la2XSgcsdr5tZw6V0em-uh5kzcYW8cP9bSwToNaPiwAAAAFkK0eEAA")
 
-PORT = os.environ.get("PORT","8080")
+
 
 
 bot = Client(

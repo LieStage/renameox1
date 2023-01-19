@@ -30,11 +30,11 @@ LAZY_PIC = os.environ.get("LAZY_PIC", "https://te.legra.ph/file/390208792e429dab
 currentTime = datetime.datetime.now()
 
 if currentTime.hour < 12:
-    wish = "❤️ Good morning sweetheart ❤️"
+    wish = "🌄 Good morning da Mapla 🌄"
 elif 12 <= currentTime.hour < 12:
-    wish = '🤍 Good afternoon my Love 🤍'
+    wish = '☀️ Good afternoon da Mapla ☀️'
 else:
-    wish = '🦋 Good evening baby 🦋'
+    wish = '🌇 Good evening da Mapla 🌇'
 
 # -------------------------------
 

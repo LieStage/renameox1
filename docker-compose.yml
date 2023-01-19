@@ -13,4 +13,4 @@ services:
       DB_URL: # User ID of Bot owner
       CHANNEL: # Username name of public channel without using '@'
       ADMIN:
-      LAZY_PIC
+      LAZY_PIC:
